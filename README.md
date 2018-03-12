@@ -4,7 +4,7 @@
 
 > *Important: This is a clone of the KSQL project to demonstrate how to built a User-Defined Function (UDF). The projects adds a H2O Deep Learning model. That's it.*
 
-For the most up-to-date version, documentation and examples, please go to [Confluent'S official KSQL Github repository](https://github.com/confluentinc/ksql).
+For the most up-to-date version, documentation and examples of KSQL, please go to [Confluent's official KSQL Github repository](https://github.com/confluentinc/ksql).
 
 # Use Case: Continuous Health Checks with Anomaly Detection
 The following example leverages a pre-trained analytic model within a KSQL UDF for continuous stream processing in real time to do health checks and alerting in case of risk. The Kafka ecosystem is used for inference, monitoring and alerting
@@ -53,11 +53,13 @@ select rowtime, eventid, anomaly from AnomalyDetection;
  
 kafka-console-consumer --bootstrap-server localhost:9092 --topic AnomalyDetection --from-beginning
 
-# Join the Community
-Whether you need help, want to contribute, or are just looking for the latest news, you can find out how to [connect with your fellow Confluent community members here](https://www.confluent.io/contact-us-thank-you/).
+# Join the Confluent Community
+Whether you need help, want to contribute, or are just looking for the latest news around the Apache Kafka ecosystem and Confluent, you can find out how to [connect with your fellow Confluent community members here](https://www.confluent.io/contact-us-thank-you/).
 
 * Ask a question in the #ksql channel in Confluent's public [Confluent Community Slack](https://slackpass.io/confluentcommunity). Account registration is free and self-service.
 * Join the [Confluent Google group](https://groups.google.com/forum/#!forum/confluent-platform).
+
+If you have feedback regarding the Kafka ecosystem and Machine Learning, feel free to contact me directly via LinkedIn, Twitter or Email. Also check out my other [Kafka-ML Github project](https://github.com/kaiwaehner/kafka-streams-machine-learning-examples) where I leverage Kafka's Streams API to apply analytic models trained with H2O, TensorFlow and DeepLearning4j.
 
 # Contributing
 Contributions to the code, examples, documentation, etc, are very much appreciated. 
